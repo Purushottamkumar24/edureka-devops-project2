@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+    name: xyz-technologies-service
+spec:
+    type: NodePort
+    selector:
+        app: xyz-technologies-app
+    ports:
+        - port: 80
+          targetPort: 8080
